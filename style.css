@@ -1,0 +1,250 @@
+/* ---- GERAL ---- */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #d984f3;
+  color: black;
+  font-size: 18px;
+}
+
+/* ---- MENU ---- */
+.menu {
+  background: linear-gradient(90deg, #7b2cbf, #ff6ec7);
+  padding: 12px;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: #7b2cbf;
+}
+
+/* ---- TITULOS ---- */
+h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 30px 0;
+  background: linear-gradient(45deg, #ff6ec7, #7b2cbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h5 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #7b2cbf, #ff6ec7);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 30px auto 20px;
+  width: fit-content;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ---- IMAGENS ---- */
+.quipets {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.pets, .endereco {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.patinhas {
+  display: block;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.banner {
+  display: block;
+  margin:  auto;
+  width: 40%;
+}
+
+/* ---- SEÇÕES ---- */
+.sobre, .banhoetosa, .localizacao {
+  padding: 0px 80px 80px 80px;
+  margin: 50px 50px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.89);
+}
+
+/* ---- TABELA ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #fff0f6;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #f0d0e0;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: linear-gradient(90deg, #7b2cbf, #ff6ec7);
+  color: white;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #ffe6f2;
+}
+
+/* ---- BOTÃO WHATSAPP ---- */
+.whatsapp {
+  width: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/*Botão Instragram*/
+.instagram {
+  width: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 85px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+/* ---- RODAPÉ ---- */
+.rodape {
+  background: linear-gradient(90deg, #7b2cbf, #ff6ec7);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  margin-top: 50px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* ---- MENU MOBILE ---- */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(90deg, #7b2cbf, #ff6ec7);
+    padding: 10px 0;
+  }
+
+  .menu li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu ul.show {
+    display: flex;
+  }
+
+  .whatsapp {
+    width: 50px;
+  }
+
+  .instagram {
+    width: 50px;
+    bottom: 75px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  /* ---- SEÇÕES ---- */
+.sobre, .banhoetosa, .localizacao {
+  padding: 0px 20px 20px 20px;
+  margin: 20px 20px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.89);
+}
+
+.sobre p{
+  font-size: 16px;
+}
+
+.banhoetosa p {
+  font-size: 18px;
+}
+
+.banhoetosa li, td {
+font-size: 16px;
+}
+
+.localizacao {
+  font-size: 16px;
+}
+
+.banner, .patinhas {
+  width: 80%;
+}
+
+.rodape {
+  font-size: 16px;
+}
+
+}
